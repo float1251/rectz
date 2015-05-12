@@ -1,11 +1,15 @@
 package jp.float1251.rectz.screen;
 
+import com.badlogic.ashley.core.Engine;
+import com.badlogic.ashley.systems.IteratingSystem;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+
+import javax.print.attribute.standard.MediaSize;
 
 import jp.float1251.rectz.Rectz;
 
@@ -38,7 +42,6 @@ public class TitleScreen implements Screen{
         stage.draw();
 
         if(Gdx.input.isTouched()){
-            Gdx.app.log("test", "touch");
             game.switchScreen(new GameScreen());
         }
     }
