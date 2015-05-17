@@ -65,7 +65,7 @@ public class TransitionScreen implements Screen{
         currentScreenSprite.setPosition(0, 0);
         currentScreenSprite.flip(false, true);
 
-        Tween.to(nextScreenSprite, SpriteTween.POS_XY, 1.0f)
+        Tween.to(nextScreenSprite, SpriteTween.POS_XY, 0.5f)
                 .target(0, 0)
                 .setCallback(backgroundAnimationComplete)
                 .setCallbackTriggers(TweenCallback.COMPLETE)

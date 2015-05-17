@@ -39,7 +39,7 @@ public class TitleScreen implements Screen{
 
         if(Gdx.input.isTouched()){
             Gdx.app.log("test", "touch");
-            game.switchScreen(new GameScreen());
+            game.switchScreen(new GameScreen(this.game));
         }
     }
 
